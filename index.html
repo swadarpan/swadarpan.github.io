@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Swadarpan – Know Yourself. Transform Yourself.</title>
-<meta name="description" content="Swadarpan offers a holistic blend of Yoga, Reiki, and DMIT-based counseling to help you achieve a more focused, balanced, and well-directed life. Discover your true potential, enhance mental clarity, and transform your mind, body, and energy through personalized guidance and healing practices."/>
+<meta name="description" content="Swadarpan offers a holistic blend of Yoga and Reiki to help you achieve a more focused, balanced, and well-directed life. Discover your true potential, enhance mental clarity, and transform your mind, body, and energy through personalized guidance and healing practices."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&family=Yeseva+One&display=swap" rel="stylesheet"/>
@@ -219,7 +219,7 @@ section{padding:100px 5%;}
 #services{background:var(--blush);position:relative;}
 .services-header{text-align:center;margin-bottom:60px;}
 .services-header .section-subtitle{margin:0 auto;}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:820px;margin:0 auto;}
 .service-card{background:var(--white);border-radius:28px;overflow:hidden;transition:transform 0.4s ease,box-shadow 0.4s ease;position:relative;}
 .service-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-heavy);}
 .service-card-img{height:220px;overflow:hidden;position:relative;}
@@ -238,7 +238,7 @@ section{padding:100px 5%;}
 /* ── SESSIONS/PRICING ── */
 #sessions{background:var(--white);}
 .sessions-header{text-align:center;margin-bottom:60px;}
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:760px;margin:0 auto;}
 .pricing-card{border:2px solid var(--pale);border-radius:28px;padding:40px 32px;position:relative;transition:all 0.4s ease;background:var(--white);}
 .pricing-card.featured{border-color:var(--accent);background:linear-gradient(135deg, #FDF0F9 0%, #F5E0F2 100%);}
 .pricing-card:hover{border-color:var(--accent);transform:translateY(-6px);box-shadow:var(--shadow);}
@@ -340,14 +340,14 @@ section{padding:100px 5%;}
 .pose-card h4{font-size:0.92rem;font-weight:600;color:var(--deep);margin-bottom:4px;}
 .pose-card p{font-size:0.82rem;color:var(--body-text);opacity:0.75;line-height:1.6;}
 
-/* ── DMIT HIGHLIGHT ── */
-.dmit-highlight{background:linear-gradient(135deg,var(--deep),var(--primary));border-radius:24px;padding:40px 48px;margin:32px 0;color:var(--white);}
-.dmit-highlight h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--gold-light);margin-bottom:12px;}
-.dmit-highlight p{color:rgba(255,255,255,0.82);font-size:0.95rem;line-height:1.8;}
-.dmit-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;}
-.dmit-step{background:rgba(255,255,255,0.08);border-radius:14px;padding:18px;text-align:center;}
-.dmit-step i{font-size:1.6rem;color:var(--gold-light);margin-bottom:8px;display:block;}
-.dmit-step p{font-size:0.82rem;color:rgba(255,255,255,0.75);}
+/* ── FEATURE HIGHLIGHT BOX (reused by article deep-dives) ── */
+.feature-highlight{background:linear-gradient(135deg,var(--deep),var(--primary));border-radius:24px;padding:40px 48px;margin:32px 0;color:var(--white);}
+.feature-highlight h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--gold-light);margin-bottom:12px;}
+.feature-highlight p{color:rgba(255,255,255,0.82);font-size:0.95rem;line-height:1.8;}
+.feature-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;}
+.feature-step{background:rgba(255,255,255,0.08);border-radius:14px;padding:18px;text-align:center;}
+.feature-step i{font-size:1.6rem;color:var(--gold-light);margin-bottom:8px;display:block;}
+.feature-step p{font-size:0.82rem;color:rgba(255,255,255,0.75);}
 
 /* ── CONTACT ── */
 #contact{background:var(--deep);position:relative;overflow:hidden;}
@@ -446,7 +446,7 @@ footer{background:#1A0815;padding:60px 5% 30px;}
   .process-steps::before{display:none;}
   .article{padding:32px 28px;}
   .pose-grid{grid-template-columns:1fr;}
-  .dmit-steps{grid-template-columns:1fr;}
+  .feature-steps{grid-template-columns:1fr;}
   .form-row{grid-template-columns:1fr;}
 }
 @media(max-width:700px){
@@ -521,7 +521,7 @@ footer{background:#1A0815;padding:60px 5% 30px;}
       <div class="hero-text">
         <div class="hero-tag"><i class="fas fa-seedling"></i> Holistic Wellness Since 2020</div>
         <h1 class="hero-h1">Where the Roads to<br/><em>Outer Success</em><br/>&amp; <em>Inner Joy</em> Meet</h1>
-        <p class="hero-subtitle">Yoga · Reiki · DMIT-Based Counseling</p>
+        <p class="hero-subtitle">Yoga · Reiki</p>
         <p class="hero-desc">Swadarpan gives you the right tools to know and transform yourself. Heal your mind, body and energies to a more balanced, purposeful and joyful life.</p>
         <div class="hero-btns">
           <a href="#sessions" class="btn-primary"><i class="fas fa-calendar-check"></i> Book a Session</a>
@@ -542,7 +542,7 @@ footer{background:#1A0815;padding:60px 5% 30px;}
     <div class="hero-stats">
       <div class="stat-card"><div class="stat-num">500+</div><div class="stat-label">Lives Transformed</div></div>
       <div class="stat-card"><div class="stat-num">4+</div><div class="stat-label">Years of Healing</div></div>
-      <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Holistic Paths</div></div>
+      <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">Holistic Paths</div></div>
       <div class="stat-card"><div class="stat-num">100%</div><div class="stat-label">Heart-Centred Care</div></div>
     </div>
   </div>
@@ -553,7 +553,6 @@ footer{background:#1A0815;padding:60px 5% 30px;}
   <div class="marquee-track" id="marquee">
     <span class="marquee-item"><i class="fas fa-om"></i> Yoga</span>
     <span class="marquee-item"><i class="fas fa-hands"></i> Reiki Healing</span>
-    <span class="marquee-item"><i class="fas fa-fingerprint"></i> DMIT Counseling</span>
     <span class="marquee-item"><i class="fas fa-heart"></i> Inner Wellness</span>
     <span class="marquee-item"><i class="fas fa-star"></i> Career Guidance</span>
     <span class="marquee-item"><i class="fas fa-brain"></i> Mind-Body Balance</span>
@@ -561,7 +560,6 @@ footer{background:#1A0815;padding:60px 5% 30px;}
     <span class="marquee-item"><i class="fas fa-leaf"></i> Self Discovery</span>
     <span class="marquee-item"><i class="fas fa-om"></i> Yoga</span>
     <span class="marquee-item"><i class="fas fa-hands"></i> Reiki Healing</span>
-    <span class="marquee-item"><i class="fas fa-fingerprint"></i> DMIT Counseling</span>
     <span class="marquee-item"><i class="fas fa-heart"></i> Inner Wellness</span>
     <span class="marquee-item"><i class="fas fa-star"></i> Career Guidance</span>
     <span class="marquee-item"><i class="fas fa-brain"></i> Mind-Body Balance</span>
@@ -591,7 +589,6 @@ footer{background:#1A0815;padding:60px 5% 30px;}
         <div class="about-pillars">
           <span class="pillar"><i class="fas fa-om"></i> Yoga</span>
           <span class="pillar"><i class="fas fa-hands"></i> Reiki</span>
-          <span class="pillar"><i class="fas fa-fingerprint"></i> DMIT</span>
           <span class="pillar"><i class="fas fa-compass"></i> Career Guidance</span>
         </div>
         <div class="about-quote">
@@ -604,7 +601,7 @@ footer{background:#1A0815;padding:60px 5% 30px;}
           </div>
           <div class="founder-info">
             <strong>Hemant Swaroop</strong>
-            <span>Yoga Instructor · Reiki Master · DMIT Counselor</span>
+            <span>Yoga Instructor · Reiki Master</span>
           </div>
         </div>
       </div>
@@ -633,7 +630,6 @@ footer{background:#1A0815;padding:60px 5% 30px;}
           <span class="mentor-badge-pill"><i class="fas fa-certificate"></i> Certified Yoga Instructor</span>
           <span class="mentor-badge-pill"><i class="fas fa-hands"></i> Reiki Grand Master</span>
           <span class="mentor-badge-pill"><i class="fas fa-brain"></i> Psychological Counselor</span>
-          <span class="mentor-badge-pill"><i class="fas fa-fingerprint"></i> DMIT Expert</span>
         </div>
       </div>
 
@@ -662,8 +658,8 @@ footer{background:#1A0815;padding:60px 5% 30px;}
           <div class="cred-item">
             <div class="cred-icon"><i class="fas fa-brain"></i></div>
             <div class="cred-text">
-              <strong>Psychological Counselor &amp; DMIT Expert</strong>
-              <span>Trained in psychological counseling and certified in DMIT (Dermatoglyphics Multiple Intelligence Test), Hemant helps individuals decode their innate potential, navigate career choices, and achieve lasting mental clarity.</span>
+              <strong>Psychological Counselor</strong>
+              <span>Trained in psychological counseling, Hemant helps individuals navigate personal challenges, build emotional resilience, and achieve lasting mental clarity through compassionate, insight-driven guidance.</span>
             </div>
           </div>
         </div>
@@ -683,8 +679,8 @@ footer{background:#1A0815;padding:60px 5% 30px;}
   <div class="section-inner">
     <div class="services-header reveal">
       <span class="section-tag">What We Offer</span>
-      <h2 class="section-title">A Triad of <em>Transformation</em></h2>
-      <p class="section-subtitle">Through Yoga, Reiki and DMIT-based counseling, we guide you on a complete journey — body, energy, and purpose.</p>
+      <h2 class="section-title">A Duo of <em>Transformation</em></h2>
+      <p class="section-subtitle">Through Yoga and Reiki, we guide you on a complete journey — body, energy, and inner balance.</p>
     </div>
     <div class="services-grid">
       <div class="service-card reveal">
@@ -715,22 +711,6 @@ footer{background:#1A0815;padding:60px 5% 30px;}
             <span class="service-tag">Energy Healing</span>
             <span class="service-tag">Stress Relief</span>
             <span class="service-tag">Meditation</span>
-          </div>
-          <a href="#sessions" class="service-learn">Explore Sessions <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-card-img">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="DMIT"/>
-          <div class="service-icon-bubble"><i class="fas fa-fingerprint"></i></div>
-        </div>
-        <div class="service-body">
-          <h3>DMIT Counseling</h3>
-          <p>Dermatoglyphics Multiple Intelligence Test (DMIT) reveals your brain's innate strengths, learning style and potential — empowering you to choose the right career path with confidence.</p>
-          <div class="service-tags">
-            <span class="service-tag">Career Guidance</span>
-            <span class="service-tag">Students</span>
-            <span class="service-tag">Professionals</span>
           </div>
           <a href="#sessions" class="service-learn">Explore Sessions <i class="fas fa-arrow-right"></i></a>
         </div>
@@ -772,7 +752,7 @@ footer{background:#1A0815;padding:60px 5% 30px;}
           <span class="num-badge">2</span>
         </div>
         <h4>Personalized Plan</h4>
-        <p>We co-create a holistic plan tailored to your unique needs — combining Yoga, Reiki and DMIT as needed.</p>
+        <p>We co-create a holistic plan tailored to your unique needs — combining Yoga and Reiki as needed.</p>
       </div>
       <div class="step-card reveal">
         <div class="step-num">
@@ -832,20 +812,6 @@ footer{background:#1A0815;padding:60px 5% 30px;}
         </ul>
         <a href="#contact" class="btn-book gold">Enquire Now</a>
       </div>
-      <div class="pricing-card reveal">
-        <div class="pricing-icon"><i class="fas fa-fingerprint"></i></div>
-        <h3>DMIT Counseling</h3>
-        <p class="pricing-desc">Fingerprint-based intelligence profiling for career, education &amp; life direction.</p>
-        <div class="pricing-placeholder">💰 Pricing coming soon — contact us!</div>
-        <ul class="pricing-features">
-          <li><i class="fas fa-check-circle"></i> Full fingerprint analysis</li>
-          <li><i class="fas fa-check-circle"></i> Detailed intelligence report</li>
-          <li><i class="fas fa-check-circle"></i> 90-minute career counseling</li>
-          <li><i class="fas fa-check-circle"></i> Learning style mapping</li>
-          <li><i class="fas fa-check-circle"></i> Follow-up session included</li>
-        </ul>
-        <a href="#contact" class="btn-book">Enquire Now</a>
-      </div>
     </div>
   </div>
 </section>
@@ -861,7 +827,7 @@ footer{background:#1A0815;padding:60px 5% 30px;}
     <div class="testimonials-grid">
       <div class="testimonial-card featured reveal">
         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="testimonial-text">"Swadarpan changed my son's life. He was directionless after Class 12, anxious and lost. The DMIT counseling helped us understand his natural strengths and the right career path. Today he's pursuing engineering with genuine passion and purpose. I'm a grateful mother."</p>
+        <p class="testimonial-text">"Swadarpan changed my son's life. He was directionless after Class 12, anxious and lost. The counseling sessions with Hemant ji helped him understand his own strengths and find real clarity about his path. Today he's pursuing engineering with genuine passion and purpose. I'm a grateful mother."</p>
         <div class="testimonial-author">
           <div class="author-avatar">S</div>
           <div>
@@ -894,7 +860,7 @@ footer{background:#1A0815;padding:60px 5% 30px;}
       </div>
       <div class="testimonial-card reveal">
         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-        <p class="testimonial-text">"As a confused teenager, I had no idea what to do with my life. DMIT counseling was a revelation. I finally understand how I think and what suits me. Best gift my parents ever gave me."</p>
+        <p class="testimonial-text">"As a confused teenager, I had no idea what to do with my life. The counseling sessions with Hemant ji were a revelation. I finally understand my own strengths and what truly suits me. Best gift my parents ever gave me."</p>
         <div class="testimonial-author">
           <div class="author-avatar" style="background:linear-gradient(135deg,#5A0A4E,#911B79);">A</div>
           <div>
@@ -949,16 +915,16 @@ footer{background:#1A0815;padding:60px 5% 30px;}
       </div>
       <div class="blog-card reveal">
         <div class="blog-img">
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80" alt="DMIT"/>
-          <span class="blog-cat">DMIT</span>
+          <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?w=600&q=80" alt="Reiki Energy Healing"/>
+          <span class="blog-cat">Reiki</span>
         </div>
         <div class="blog-body">
-          <h3>What is DMIT? A Simple Guide to Understanding Your Child's Potential</h3>
+          <h3>The Science and Spirit of Reiki: How Energy Healing Restores Balance</h3>
           <div class="blog-meta">
-            <span><i class="far fa-calendar"></i> Jan 2025</span>
-            <span><i class="far fa-clock"></i> 7 min read</span>
+            <span><i class="far fa-calendar"></i> Apr 2025</span>
+            <span><i class="far fa-clock"></i> 6 min read</span>
           </div>
-          <a href="#article-dmit" class="blog-read">Read Article <i class="fas fa-arrow-right"></i></a>
+          <a href="#article-reiki" class="blog-read">Read Article <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -1080,63 +1046,49 @@ footer{background:#1A0815;padding:60px 5% 30px;}
       </div>
     </div>
 
-    <!-- ARTICLE 3: DMIT -->
-    <div class="article reveal" id="article-dmit">
+    <!-- ARTICLE 3: REIKI -->
+    <div class="article reveal" id="article-reiki">
       <div class="article-header">
-        <span class="article-cat-tag">DMIT &amp; Career</span>
-        <h2>What is DMIT? A Simple Guide to Understanding Your Child's Potential</h2>
+        <span class="article-cat-tag">Reiki</span>
+        <h2>The Science and Spirit of Reiki: How Energy Healing Restores Balance</h2>
         <div class="article-byline">
           <span><i class="fas fa-user" style="color:var(--accent)"></i> Hemant Swaroop</span>
-          <span><i class="far fa-calendar" style="color:var(--accent)"></i> January 2025</span>
-          <span><i class="far fa-clock" style="color:var(--accent)"></i> 7 min read</span>
+          <span><i class="far fa-calendar" style="color:var(--accent)"></i> April 2025</span>
+          <span><i class="far fa-clock" style="color:var(--accent)"></i> 6 min read</span>
         </div>
       </div>
       <div class="article-body">
-        <p>Every parent wants the best for their child. Yet so many children end up in careers that don't suit them — not because they aren't talented, but because no one knew how to read their unique potential. This is exactly where DMIT changes everything.</p>
+        <p>Long before modern medicine had language for the mind-body connection, healing traditions across the world understood that the body carries an energy of its own — and that this energy can become blocked, depleted or out of balance. Reiki is one of the gentlest and most accessible ways to work directly with that energy.</p>
+        <p>Developed in early twentieth-century Japan and practiced worldwide today, Reiki is a hands-on (or hands-near) healing technique in which a practitioner channels universal life energy to support the body's own capacity to restore balance and ease.</p>
 
-        <h3>What Does DMIT Stand For?</h3>
-        <p><strong>D</strong>ermatoglyphics <strong>M</strong>ultiple <strong>I</strong>ntelligence <strong>T</strong>est. It sounds complex, but the idea is elegantly simple: the patterns on your fingertips — your fingerprints — are formed in the womb at the same time as your brain, and they are directly linked to specific areas of your brain's development.</p>
+        <h3>What Exactly Happens in a Session?</h3>
+        <p>A Reiki session is quiet, slow and deeply restful. You remain fully clothed, lying down or seated comfortably, while the practitioner places their hands lightly on or just above different points of the body. Many people drift into a state similar to deep meditation — some even fall asleep.</p>
 
-        <div class="dmit-highlight">
-          <h3>How Does It Work?</h3>
-          <p>DMIT uses a scientifically validated analysis of your fingerprint patterns to map your innate intelligences — based on Dr. Howard Gardner's Multiple Intelligence Theory. Everyone is intelligent; DMIT tells you <em>how</em> you are intelligent.</p>
-          <div class="dmit-steps">
-            <div class="dmit-step"><i class="fas fa-fingerprint"></i><p>Fingerprints are scanned safely and non-invasively</p></div>
-            <div class="dmit-step"><i class="fas fa-brain"></i><p>Patterns are analyzed against a proprietary intelligence database</p></div>
-            <div class="dmit-step"><i class="fas fa-chart-bar"></i><p>A detailed report maps your innate strengths &amp; learning style</p></div>
+        <div class="feature-highlight">
+          <h3>How a Session Unfolds</h3>
+          <p>Every Reiki session at Swadarpan follows a gentle, unhurried rhythm designed to help your body and mind fully let go.</p>
+          <div class="feature-steps">
+            <div class="feature-step"><i class="fas fa-hands"></i><p>Gentle, non-invasive hand placements along the body's energy centres</p></div>
+            <div class="feature-step"><i class="fas fa-wind"></i><p>Slow, guided breathing to help the nervous system settle</p></div>
+            <div class="feature-step"><i class="fas fa-leaf"></i><p>A closing period of quiet integration and reflection</p></div>
           </div>
         </div>
 
-        <h3>The 8 Multiple Intelligences</h3>
-        <p>Based on Gardner's framework, DMIT measures how dominant each of these intelligences is in you:</p>
+        <h3>What People Often Notice Afterward</h3>
         <ul>
-          <li><strong>Linguistic</strong> — the ability with words and language</li>
-          <li><strong>Logical-Mathematical</strong> — reasoning, patterns, numbers</li>
-          <li><strong>Spatial</strong> — thinking in three dimensions; visual creativity</li>
-          <li><strong>Musical</strong> — sensitivity to rhythm, melody and sound</li>
-          <li><strong>Bodily-Kinaesthetic</strong> — physical coordination, craftsmanship</li>
-          <li><strong>Interpersonal</strong> — understanding and relating to others</li>
-          <li><strong>Intrapersonal</strong> — self-awareness and inner wisdom</li>
-          <li><strong>Naturalist</strong> — sensitivity to nature and the environment</li>
-        </ul>
-
-        <h3>Who Should Take DMIT?</h3>
-        <p>DMIT is for virtually anyone at a crossroads — but it's especially valuable for:</p>
-        <ul>
-          <li>Children (ages 3 and above) to help parents support their natural learning style</li>
-          <li>Teenagers choosing their career stream (Science, Commerce, Arts)</li>
-          <li>College students unsure about specialisation or career direction</li>
-          <li>Working professionals considering a career pivot</li>
-          <li>Couples experiencing communication difficulties (understanding each other's intelligence profiles can be transformative)</li>
+          <li><strong>A deep sense of calm</strong> — many describe it as the most relaxed they've felt in months.</li>
+          <li><strong>Better sleep</strong> in the days following a session.</li>
+          <li><strong>Reduced tension</strong> in the shoulders, jaw and lower back.</li>
+          <li><strong>Greater emotional clarity</strong> — old worries feel lighter and easier to process.</li>
         </ul>
 
         <div class="article-tip">
-          <p>"Your fingerprints don't lie. They are a map of who you were born to be — DMIT simply helps you read that map."</p>
+          <p>"Reiki doesn't force anything. It simply clears the static, so your body can remember how to heal itself."</p>
         </div>
 
-        <h3>Is DMIT Accurate?</h3>
-        <p>DMIT is based on the established science of dermatoglyphics — the study of skin ridge patterns — which has been researched for over 200 years. While it is a guidance tool and not a deterministic prediction, thousands of families have found it to be remarkably accurate and deeply affirming. At Swadarpan, our DMIT sessions are always paired with in-depth counseling to help you interpret and act on your results meaningfully.</p>
-        <p>Curious about your own intelligence profile — or your child's? Reach out to us and we'll guide you through it.</p>
+        <h3>Who Benefits Most from Reiki?</h3>
+        <p>Reiki is gentle enough for almost anyone — from busy professionals carrying chronic stress, to those recovering from emotional upheaval, to people simply looking for a deeper sense of groundedness in daily life. It pairs beautifully with yoga: where yoga builds strength and movement awareness, Reiki works on the subtler layer of energy and emotion.</p>
+        <p>Curious whether Reiki is right for you? Reach out and we'll walk you through exactly what to expect in your first session.</p>
       </div>
     </div>
 
@@ -1200,7 +1152,6 @@ footer{background:#1A0815;padding:60px 5% 30px;}
               <option value="">— Select a Service —</option>
               <option>Yoga Sessions</option>
               <option>Reiki Healing</option>
-              <option>DMIT Counseling</option>
               <option>Multiple Services</option>
               <option>Just exploring — tell me more!</option>
             </select>
@@ -1221,7 +1172,7 @@ footer{background:#1A0815;padding:60px 5% 30px;}
     <div class="footer-top">
       <div class="footer-brand">
         <img src="https://swadarpan.com/swadarpan-logo.png" alt="Swadarpan"/>
-        <p>Swadarpan is where the roads to outer success and inner joy meet. Transforming lives through Yoga, Reiki and DMIT Counseling since 2020.</p>
+        <p>Swadarpan is where the roads to outer success and inner joy meet. Transforming lives through Yoga and Reiki since 2020.</p>
         <div class="footer-social">
           <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
@@ -1236,7 +1187,6 @@ footer{background:#1A0815;padding:60px 5% 30px;}
         <ul>
           <li><a href="#services">Yoga Sessions</a></li>
           <li><a href="#services">Reiki Healing</a></li>
-          <li><a href="#services">DMIT Counseling</a></li>
           <li><a href="#sessions">Pricing &amp; Packages</a></li>
           <li><a href="#contact">Free Discovery Call</a></li>
         </ul>
@@ -1246,7 +1196,7 @@ footer{background:#1A0815;padding:60px 5% 30px;}
         <ul>
           <li><a href="#article-mental">Mental Wellness</a></li>
           <li><a href="#article-yoga">Yoga Poses</a></li>
-          <li><a href="#article-dmit">About DMIT</a></li>
+          <li><a href="#article-reiki">The Power of Reiki</a></li>
           <li><a href="#about">Our Story</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
         </ul>
@@ -1370,7 +1320,7 @@ const statsObserver = new IntersectionObserver((entries) => {
       const nums = [
         {el: document.querySelectorAll('.stat-num')[0], val: 500, suffix: '+'},
         {el: document.querySelectorAll('.stat-num')[1], val: 4,   suffix: '+'},
-        {el: document.querySelectorAll('.stat-num')[2], val: 3,   suffix: ''},
+        {el: document.querySelectorAll('.stat-num')[2], val: 2,   suffix: ''},
         {el: document.querySelectorAll('.stat-num')[3], val: 100, suffix: '%'},
       ];
       nums.forEach(n => { if(n.el) { n.el.dataset.suffix = n.suffix; animateCounter(n.el, n.val); }});
